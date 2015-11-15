@@ -40,7 +40,6 @@ private:
 
 private slots:
 	void sendMessage();
-	void asyncInvoke(const QByteArray &data);
 };
 
 #endif // DBUS_SENDER_H

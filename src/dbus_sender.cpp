@@ -99,8 +99,3 @@ void DBusSender::sendAsyncMessage()
 
 	setWindowTitle(reply.value());
 }
-
-void DBusSender::asyncInvoke(const QByteArray &text)
-{
-	qDebug() << text;
-}
