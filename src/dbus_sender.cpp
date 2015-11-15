@@ -46,6 +46,8 @@ void DBusSender::setupDBus()
 
 	if (!sessionBus.registerObject(m_objNameBase + m_senderName, this))
 		qDebug() << "registerObject() failed";
+
+	new IfnameAdaptor(this);
 }
 
 void DBusSender::createInterface()
